@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFS — The Fitness Sanctuary | Tezpur</title>
+    <meta name="description" content="Tezpur's premier fitness destination. Rare facilities, certified guidance, and an environment that makes you want to show up every single day.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" defer></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-text">
+            <span class="loader-word">THE</span>
+            <span class="loader-word">FITNESS</span>
+            <span class="loader-word">SANCTUARY</span>
+        </div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-bar">
+            <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+            <div class="nav-logo">TFS</div>
+            <button class="sound-btn" id="soundBtn" aria-label="Sound">
+                <svg width="20" height="20" viewBox="0 0 24 24" stroke-width="2">
+                    <path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.08"/>
+                </svg>
+            </button>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <div class="menu-items">
+                <a href="#home" class="menu-link">Home</a>
+                <a href="#services" class="menu-link">Services</a>
+                <a href="#stats" class="menu-link">Numbers</a>
+                <a href="#proof" class="menu-link">Testimonials</a>
+                <a href="#contact" class="menu-link">Visit Us</a>
+            </div>
+            <div class="menu-cta">
+                <a href="#contact" class="btn-primary">Join the Sanctuary</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assest/hero.png" alt="The Fitness Sanctuary" class="hero-img" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="ribbon-marquee">
+                <div class="ribbon-track">
+                    <span class="ribbon-text">The Fitness Sanctuary</span>
+                    <span class="ribbon-divider">•</span>
+                    <span class="ribbon-text">TFS Tezpur</span>
+                    <span class="ribbon-divider">•</span>
+                    <span class="ribbon-text">The Fitness Sanctuary</span>
+                    <span class="ribbon-divider">•</span>
+                    <span class="ribbon-text">TFS Tezpur</span>
+                    <span class="ribbon-divider">•</span>
+                    <span class="ribbon-text">The Fitness Sanctuary</span>
+                    <span class="ribbon-divider">•</span>
+                    <span class="ribbon-text">TFS Tezpur</span>
+                    <span class="ribbon-divider">•</span>
+                </div>
+            </div>
+            <p class="hero-sub">Tezpur's premier fitness destination. Rare facilities, certified guidance, and an environment that makes you want to show up every single day.</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn-primary">Join the Sanctuary</a>
+                <a href="#services" class="btn-outline">Explore Facilities</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Text Reveal Section -->
+    <section class="text-reveal-section">
+        <div class="container">
+            <p class="reveal-text">We don't build <span class="highlight">bodies</span>. We build <span class="highlight">discipline</span>, <span class="highlight">confidence</span>, and a version of you that <span class="highlight">refuses to quit</span>.</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section" id="services">
+        <div class="section-inner">
+            <h2 class="section-title">What We Offer</h2>
+            <p class="section-subtitle">Rare facilities built for serious results.</p>
+            <div class="services-list">
+                <div class="service-row">
+                    <span class="service-num">01</span>
+                    <div class="service-content">
+                        <h3 class="service-name">Power Lifting</h3>
+                        <p class="service-desc">Professional-grade racks and platforms built for serious strength.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-row">
+                    <span class="service-num">02</span>
+                    <div class="service-content">
+                        <h3 class="service-name">Personal Training</h3>
+                        <p class="service-desc">Certified trainers dedicated to perfecting your form and pushing your limits.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-row">
+                    <span class="service-num">03</span>
+                    <div class="service-content">
+                        <h3 class="service-name">Body Transformation</h3>
+                        <p class="service-desc">Tailored weight loss and weight gain programs that actually deliver results.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-row">
+                    <span class="service-num">04</span>
+                    <div class="service-content">
+                        <h3 class="service-name">Certified Nutrition</h3>
+                        <p class="service-desc">Fuel your growth with expert, science-backed dietary guidance.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-row">
+                    <span class="service-num">05</span>
+                    <div class="service-content">
+                        <h3 class="service-name">Cardio & Conditioning</h3>
+                        <p class="service-desc">High-end equipment to elevate your endurance and stamina.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Active Members</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-suffix">/5</span>
+                    <span class="stat-label">Google Rating</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Certified Trainers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-suffix">yrs</span>
+                    <span class="stat-label">Transforming Lives</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bold Typography -->
+    <section class="bold-section">
+        <div class="bold-inner">
+            <div class="bold-title">
+                <span class="bold-word bold-word-1">YOUR</span>
+                <span class="bold-word bold-word-2">PEAK</span>
+            </div>
+            <div class="bold-accent-line"></div>
+        </div>
+    </section>
+
+    <!-- Horizontal Scroll Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-wrapper">
+            <div class="gallery-track">
+                <div class="gallery-card">
+                    <img src="../saveweb2zip-com-phive-pt/D7lyfZHYDwmt.pt/_ipx/f_webp&s_600x600/https_/cdn.sanity.io/images/z6ex5ahr/production/0aebc180846078504efd0c0d56cf5abed237f596-1100x1100.jpg" alt="Strength Zone" loading="lazy">
+                    <span class="gallery-label">Strength Zone</span>
+                </div>
+                <div class="gallery-card">
+                    <img src="../saveweb2zip-com-phive-pt/D7lyfZHYDwmt.pt/_ipx/f_webp&s_600x600/https_/cdn.sanity.io/images/z6ex5ahr/production/3e75e92a54537a2df5c3356e6df213dc74a20aba-1100x1100.jpg" alt="Cardio Floor" loading="lazy">
+                    <span class="gallery-label">Cardio Floor</span>
+                </div>
+                <div class="gallery-card">
+                    <img src="../saveweb2zip-com-phive-pt/D7lyfZHYDwmt.pt/_ipx/f_webp&s_600x600/https_/cdn.sanity.io/images/z6ex5ahr/production/8b8ec683b2611c2b07cfb7ce620fa22942438db6-1100x1100.jpg" alt="Training Area" loading="lazy">
+                    <span class="gallery-label">Training Area</span>
+                </div>
+                <div class="gallery-card">
+                    <img src="../saveweb2zip-com-phive-pt/D7lyfZHYDwmt.pt/_ipx/f_webp&s_600x600/https_/cdn.sanity.io/images/z6ex5ahr/production/a4457eafe0be7a88cf3ee419a03021d262b4bd0c-1100x1100.jpg" alt="Free Weights" loading="lazy">
+                    <span class="gallery-label">Free Weights</span>
+                </div>
+                <div class="gallery-card">
+                    <img src="../saveweb2zip-com-phive-pt/D7lyfZHYDwmt.pt/_ipx/f_webp&s_600x600/https_/cdn.sanity.io/images/z6ex5ahr/production/af91e6e6ae6c070ce26e070047b9b7dc97d570a3-1100x1100.jpg" alt="Recovery" loading="lazy">
+                    <span class="gallery-label">Recovery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" id="proof">
+        <div class="section-inner">
+            <h2 class="section-title light">The Proof</h2>
+            <p class="section-subtitle light">Don't take our word for it.</p>
+            <div class="testimonials-list">
+                <blockquote class="testimonial-card">
+                    <p>"Facilities of this level are rare, and this place truly stands out."</p>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"The vibe here makes you want to show up every day and push yourself harder."</p>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <p>"Amazing staff, great equipment, and a very motivating environment."</p>
+                </blockquote>
+            </div>
+            <p class="testimonial-rating">★★★★★ — Rated 5/5 across Google, Facebook, and Justdial</p>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2 class="cta-banner-text">Stop scrolling. <span class="highlight">Start lifting.</span></h2>
+            <a href="#contact" class="btn-primary btn-large">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Marquee Ticker -->
+    <section class="ticker-section">
+        <div class="ticker-track">
+            <span class="ticker-item">STRENGTH</span>
+            <span class="ticker-item">DISCIPLINE</span>
+            <span class="ticker-item">POWER</span>
+            <span class="ticker-item">GRIT</span>
+            <span class="ticker-item">FOCUS</span>
+            <span class="ticker-item">STRENGTH</span>
+            <span class="ticker-item">DISCIPLINE</span>
+            <span class="ticker-item">POWER</span>
+            <span class="ticker-item">GRIT</span>
+            <span class="ticker-item">FOCUS</span>
+        </div>
+    </section>
+
+    <!-- Before/After Transformation -->
+    <section class="transform-section">
+        <div class="container">
+            <div class="transform-header">
+                <h2 class="section-title">The Transformation</h2>
+                <p class="section-subtitle">Real people. Real results. No shortcuts.</p>
+            </div>
+            <div class="transform-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Week 1-4</span>
+                        <h3 class="timeline-title">Build the Habit</h3>
+                        <p class="timeline-desc">Show up consistently. Learn proper form. Your body adapts to the new demand.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Month 2-3</span>
+                        <h3 class="timeline-title">See the Shift</h3>
+                        <p class="timeline-desc">Strength increases. Clothes fit different. People start noticing.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Month 4-6</span>
+                        <h3 class="timeline-title">Become Unrecognizable</h3>
+                        <p class="timeline-desc">Full body transformation. New confidence. A version of you that refuses to quit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us -->
+    <section class="visit-section" id="contact">
+        <div class="section-inner">
+            <h2 class="section-title">Visit Us</h2>
+            <p class="section-subtitle">Walk in or call. No appointment needed.</p>
+            <div class="visit-grid">
+                <div class="visit-info">
+                    <h3 class="visit-name">The Fitness Sanctuary — TFS</h3>
+                    <div class="visit-details">
+                        <div class="visit-item">
+                            <span class="visit-label">Location</span>
+                            <span class="visit-value">NT Rd, near Assam Valley Academy, Dadara, Ketekibari, Tezpur, Assam 784154</span>
+                        </div>
+                        <div class="visit-item">
+                            <span class="visit-label">Hours</span>
+                            <span class="visit-value">Open Daily until 10:30 PM</span>
+                        </div>
+                        <div class="visit-item">
+                            <span class="visit-label">Best Time to Train</span>
+                            <span class="visit-value">5:00 PM is usually not too busy. Most members spend 1.5 – 2.5 hours hitting their goals.</span>
+                        </div>
+                        <div class="visit-item">
+                            <span class="visit-label">Phone</span>
+                            <a href="tel:09706981902" class="visit-phone">097069 81902</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="visit-cta">
+                    <div class="cta-box">
+                        <h3>Ready to start?</h3>
+                        <p>Your first session is on us. Come experience the sanctuary.</p>
+                        <a href="tel:09706981902" class="btn-primary">Call Now</a>
+                        <a href="https://maps.google.com/?q=The+Fitness+Sanctuary+Tezpur" target="_blank" class="btn-outline dark">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-logo">TFS</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#proof">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 The Fitness Sanctuary, Tezpur. Your Vibe. Your Sanctuary. Your Peak.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
