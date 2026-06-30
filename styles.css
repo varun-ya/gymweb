@@ -1,5 +1,5 @@
-@font-face { font-display: swap; font-family: AcidGrotesk; src: url(../saveweb2zip-com-phive-pt/D7lyfZHYDwmt.pt/fonts/AcidGroteskVF.woff2) format("woff2") }
-@font-face { font-display: swap; font-family: PPFormula; src: url(../saveweb2zip-com-phive-pt/D7lyfZHYDwmt.pt/fonts/PPFormula.woff2) format("woff2") }
+@font-face { font-display: swap; font-family: AcidGrotesk; src: url(fonts/AcidGroteskVF.woff2) format("woff2") }
+@font-face { font-display: swap; font-family: PPFormula; src: url(fonts/PPFormula.woff2) format("woff2") }
 
 :root {
     --dark: #0a0a0a;
